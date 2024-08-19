@@ -1,0 +1,22 @@
+[
+{
+    "name": "Home",
+    "url": "/#home"
+},
+{
+    "name": "About",
+    "url": "/#about-me"
+},
+{
+    "name": "Skills",
+    "url": "/#skills"
+},
+{
+    "name": "Projects",
+    "url": "/#projects"
+},
+{
+    "name": "Contact",
+    "url": "mailto:tec.maximiliano.gomez@gmail.com"
+}
+]

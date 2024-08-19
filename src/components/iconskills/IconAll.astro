@@ -1,0 +1,50 @@
+---
+import IconTailwind from "./IconTailwind.astro";
+import IconTypeScript from "./IconTypeScript.astro";
+import IconHtml from "./IconHtml.astro";
+import IconCss from "./IconCss.astro";
+import IconReact from "./IconReact.astro";
+import IconGit from "./IconGit.astro";
+import IconGitHub from "./IconGtiHub.astro";
+import IconJavaScript from "./IconJavaScritp.astro";
+import IconMongodb from "./IconMongodb.astro";
+import IconNodeJs from "./IconNodeJs.astro";
+import IconDocker from "./IconDocker.astro";
+import IconPython from "./IconPy.astro";
+import IconLinux from "./Ilinux.astro";
+import IconC from "./IconC.astro";
+import IconBash from "./IconBash.astro";
+import IconMSQL from "./MySql.astro";
+import IconPHP from "./IconPHP.astro";
+import IconBtstrap from "./IcoBootstrap.astro";
+
+export const ICONS = {
+  html: IconHtml,
+  css: IconCss,
+  javaScript: IconJavaScript,
+  typeScript: IconTypeScript,
+  python: IconPython,
+  cplusplus: IconC,
+  react: IconReact,
+  nodejs: IconNodeJs,
+  tailwind: IconTailwind,
+  git: IconGit,
+  github: IconGitHub,
+  mongodb: IconMongodb,
+  docker: IconDocker,
+  linux: IconLinux,
+  bash: IconBash,
+  mysql: IconMSQL,
+  php: IconPHP,
+  bootstrap: IconBtstrap,
+  // add new icons here <--
+  // Make sure that when calling the icon the key is the same
+  // "optional" in the IconKeys const file adds the icon key for when you call IconKeys.nameIcon
+};
+
+export type IconName = keyof typeof ICONS;
+
+export function getIconComponent(iconName: IconName) {
+  return ICONS[iconName] || null;
+}
+---

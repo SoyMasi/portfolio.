@@ -1,6 +1,6 @@
 # Software Developer Portfolio - Maximiliano Gomez
 
-![Portfolio Preview](https://github.com/user-attachments/assets/667d52fd-b504-4b17-8ea0-9401c30564f9)
+![Portfolio preview](https://github.com/user-attachments/assets/9b3f106c-e2c5-4a76-9d9e-b83c3d1b0ac7)
 
 ## 👨‍💻 About Me
 
@@ -52,7 +52,6 @@ Software Developer and Electronics Technician currently studying Information Sys
 ## 📫 Contact
 
 - **LinkedIn**: [Maximiliano Jesus Gomez](https://www.linkedin.com/in/maximiliano-jesus-gomez-3341bb1a9/)
-- **GitHub**: [SoyMasi](https://github.com/SoyMasi)
 - **Email**: tec.maximiliano.gomez@gmail.com
 
 ## 🔧 Built With

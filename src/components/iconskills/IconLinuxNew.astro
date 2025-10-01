@@ -1,0 +1,47 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 256 256"
+  width="45"
+  height="45"
+>
+  <!-- Tux the Linux Penguin -->
+  <defs>
+    <radialGradient id="tux-body" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0f0f0"/>
+    </radialGradient>
+    <radialGradient id="tux-back" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#2c2c2c"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Body back -->
+  <ellipse cx="128" cy="160" rx="60" ry="80" fill="url(#tux-back)"/>
+  
+  <!-- Wings -->
+  <ellipse cx="90" cy="140" rx="25" ry="45" fill="#1a1a1a"/>
+  <ellipse cx="166" cy="140" rx="25" ry="45" fill="#1a1a1a"/>
+  
+  <!-- Body front -->
+  <ellipse cx="128" cy="160" rx="45" ry="65" fill="url(#tux-body)"/>
+  
+  <!-- Head -->
+  <circle cx="128" cy="80" r="40" fill="url(#tux-back)"/>
+  
+  <!-- Face -->
+  <ellipse cx="128" cy="85" rx="30" ry="25" fill="url(#tux-body)"/>
+  
+  <!-- Eyes -->
+  <circle cx="118" cy="75" r="6" fill="#ffffff"/>
+  <circle cx="138" cy="75" r="6" fill="#ffffff"/>
+  <circle cx="118" cy="75" r="3" fill="#000000"/>
+  <circle cx="138" cy="75" r="3" fill="#000000"/>
+  
+  <!-- Beak -->
+  <polygon points="128,85 135,95 121,95" fill="#ff8c00"/>
+  
+  <!-- Feet -->
+  <ellipse cx="110" cy="230" rx="12" ry="8" fill="#ff8c00"/>
+  <ellipse cx="146" cy="230" rx="12" ry="8" fill="#ff8c00"/>
+</svg>

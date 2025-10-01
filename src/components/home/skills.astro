@@ -1,0 +1,89 @@
+---
+import { skills } from "../../content/config.ts";
+import { getIconComponent } from "../iconskills/IconAll.astro";
+---
+
+<section class="max-w-4xl mx-auto px-7 lg:px-0" id="skills">
+  <div class="container-skill">
+    <h2
+      class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100"
+      style="margin-bottom: 20px; margin-top: -50px;"
+    >
+      Skills & Knowledge
+    </h2>
+    
+    <div class="skills-grid">
+      {
+        skills.map(({ icon, title }) => {
+          const IconComponent = getIconComponent(icon);
+          return (
+            <div class="skill-item">
+              {IconComponent && <IconComponent />}
+              <p class="skill-text font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100">
+                {title}
+              </p>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    padding: 40px 0;
+    width: 100%;
+  }
+
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .skill-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .skill-text {
+    padding: 8px 0;
+    font-size: 0.875rem;
+  }
+
+  /* Asegurar que los iconos dentro de <i> se muestren correctamente */
+  .skill-item i {
+    display: block;
+    width: 45px;
+    height: 45px;
+  }
+
+  .skill-item i svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 1rem;
+      padding: 20px 0;
+    }
+    
+    .skill-item {
+      padding: 0.75rem;
+    }
+    
+    .skill-text {
+      font-size: 0.75rem;
+    }
+  }
+</style>

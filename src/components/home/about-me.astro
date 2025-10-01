@@ -1,5 +1,4 @@
 ---
-import Button from "../button.astro";
 interface Props {
   id?: string;
 }
@@ -117,7 +116,7 @@ const { id } = Astro.props;
     // Actualizar el elemento con la edad calculada
     const ageElement = document.getElementById('age');
     if (ageElement) {
-      ageElement.textContent = age;
+      ageElement.textContent = age.toString();
     }
   });
 </script>
